@@ -1,0 +1,27 @@
+.header {
+    background: $off-black;
+    margin-bottom: $m-size;  //Put space between header and things below it
+    padding: $m-size 0; //1.6 spacing above and below and 0 on left and right
+    color: white;
+
+    //SCSS Supports for nested selectors but use BEM instead to avoid nesting
+    
+}
+//BEM - Block Element Modifier - Naming Convention, No Special Meaning
+.header__title {
+    font-size: $l-size;
+    margin: 0;
+}
+
+.header__subtitle {
+    color: $off-white;
+    font-size: $m-size;
+    font-weight: 500;
+    margin: 0;
+}
+
+@media (min-width: $desktop-breakpoint) {
+    .header {
+        margin-bottom: $xl-size;
+    }
+}

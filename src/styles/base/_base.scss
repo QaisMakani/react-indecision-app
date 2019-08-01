@@ -1,0 +1,18 @@
+//rem are better for accessbility. allows user to scale things up and down.
+html {
+    font-size: 62.5%;       //This is done to convert 1rem to 10px instead of 16 making it easy to calculate
+}
+
+body {
+    background: $dark-blue;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: $m-size;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: default;
+}
